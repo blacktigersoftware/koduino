@@ -140,10 +140,11 @@ tools.stm32loader.upload.pattern=python "{path}/{cmd}" -p {serial.port} -b {uplo
 
 # ST-LINK (Windows)
 tools.stlink.cmd=ST-LINK_CLI.exe
-tools.stlink.cmd.windows=C:/Program Files (x86)/STMicroelectronics/STM32 ST-LINK Utility/ST-LINK Utility/ST-LINK_CLI.exe
+tools.stlink.path={runtime.hardware.path}/stm32/tools/win/stlink
+tools.stlink.cmd.windows={runtime.hardware.path}/stm32//tools/win/stlink/ST-LINK_CLI.exe
 tools.stlink.upload.params.verbose=
 tools.stlink.upload.params.quiet=
-tools.stlink.upload.pattern="{cmd}" {upload.options} -ME -P "{build.path}/{build.project_name}.bin" 0x08000000 -Rst
+tools.stlink.upload.pattern="{cmd}" {upload.options} -P "{build.path}/{build.project_name}.bin" 0x08000000 -V -Rst
 
 # stlink
 tools.texanestlink.cmd=st-flash

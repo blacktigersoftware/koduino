@@ -229,3 +229,31 @@ f40_41x.menu.bootloader.bootbut=Boot button
 f40_41x.menu.bootloader.bootbut.upload.options=dtr_rts
 
 
+###########################################################
+
+f407_discovery.name=F407_Discovery
+f407_discovery.build.mcu=STM32F40_41xxx
+f407_discovery.build.series=STM32F4xx
+f407_discovery.build.f_cpu=168000000L
+f407_discovery.build.core=arduino
+f407_discovery.build.extra_flags=
+f407_discovery.build.ldscript=STM32F417IG_FLASH.ld
+f407_discovery.build.variant=f407_discovery
+f407_discovery.build.board=STM32_F40_41X
+
+# HSE choices
+f407_discovery.build.hse_value=16000000UL
+f407_discovery.build.clksrc=HSE_16M
+f407_discovery.build.isrs=INLINE
+
+# Upload common
+f407_discovery.upload.tool=stlink
+f407_discovery.upload.protocol=stlink
+f407_discovery.upload.options=-c SWD UR
+
+f407_discovery.upload.ram.maximum_size=17000
+f407_discovery.upload.maximum_size=1048576
+f407_discovery.upload.flash.maximum_size=1048576
+f407_discovery.upload.file_type=bin
+
+
