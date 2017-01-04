@@ -53,3 +53,4 @@ kod#,"""Teensy"" pin",Chip pin,ADC,ADCChan,Timer,TimChan,AF0,Peripheral1,AF1,Per
 51,,PD13,,,,,,,,,,xled
 52,,PD14,,,,,,,,,,yled
 53,,PD15,,,,,,,,,,zled
+54,,PE3,,,,,,,,,,acs
